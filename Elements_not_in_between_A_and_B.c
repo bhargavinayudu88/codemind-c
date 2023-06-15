@@ -1,20 +1,18 @@
 #include<stdio.h>
 int main(){
-	int n,a[100],A,B,i,sum=0;
-	scanf("%d",&n);
-	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
-	}
-	scanf("%d%d",&A,&B);
-	for(i=0;i<n;i++){
-		if(a[i]<A && a[i]<B || a[i]>A && a[i]>B){
-			printf("%d ",a[i]);
-			sum++;
-		}
-	}
-	{
-		if(sum==0){
-			printf("-1");
-		}
-	}
+    int i,n,arr[100],a,b,c;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d%d",&a,&b);
+    for(i=0;i<n;i++){
+    if(arr[i]<a && arr[i]<b || arr[i]>a && arr[i]>b){
+        printf("%d ",arr[i]);
+        c=1;
+    }
+    }
+    if(c==0){
+        printf("-1");
+    }
 }
